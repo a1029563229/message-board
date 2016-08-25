@@ -1,0 +1,22 @@
+<%- include header %>
+<%- include err %>
+<div class="container-fluid login">
+	<form method="post" class="form-horizontal">
+		<div class="form-group">
+			<label for="" class="col-xs-3 control-label">用户名</label>
+			<div class="col-xs-8">
+				<input type="text" class="form-control" placeholder="请输入您的用户名" name="name">
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="" class="col-xs-3 control-label">密码</label>
+			<div class="col-xs-8">
+				<input type="password" class="form-control" placeholder="请输入您的密码" name="password">
+			</div>
+		</div>
+		<button type="submit" class="btn btn-block btn-success">登陆</button>
+		<div class="form-group text-center sign">
+			还没有账号？点击右上角按钮立即注册吧！
+		</div>
+	</form>
+</div>

@@ -1,0 +1,110 @@
+@color:#4E94D4;
+@fc:#fff;
+@ft:14px;
+@p10:10px;
+
+.text_c {
+	text-align: center;
+	font-size: @ft + 5;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+a {
+	color:#fff;
+	&:link {
+		color: #fff;
+		text-decoration: none;
+	}
+	&:visited {
+		color: #fff;
+		text-decoration: none;
+	}
+	&:active {
+		color: #fff;
+		text-decoration: none;
+	}
+}
+
+body {
+	font-family: "微软雅黑";
+	background: #f5f5f5;
+	width: 100%;
+	header {
+		background: @color;
+		color:@fc;
+		width: 100%;
+		height: 50px;
+		.row {
+			width: 100%;
+			color: @fc;
+			line-height: 50px;
+			.text_c;
+		}
+	}
+	.post_detail {
+		position: fixed;
+		background: #fff;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		margin: 0;
+		padding-top: 1vh;
+	}
+	.pl_detail{
+		background: #fff;
+		color:#000;
+		margin-bottom: 10px;
+		padding: 10px;
+		&_name{
+			color: @color;
+		}
+		&_pl {
+			&_content {
+				min-height: 9vh;
+				padding-bottom: 10px;
+			}
+			&_time {
+				font-size: @ft - 2;
+				color:#3c3c3c;
+				text-align: right;
+			}
+		}
+	}
+	.login {
+		padding-top: 2vh;
+		background: #fff;
+		.control-label {
+			padding-top: 1vh;
+			text-align: center;
+		}
+		.sign{
+			margin-top: 1vh;
+			color:#E93500;
+		}
+		.sign_now{
+			margin-bottom: 3vh;
+		}
+	}
+	.error {
+		.row {
+			padding: 1vh;
+			color:#E93500;
+			text-align: center;
+		}
+	}
+	.logout {
+		padding-bottom: 2vh;
+		&_img {
+			width: 100%;
+			height: auto;
+			img {
+				border-radius: 50px;
+			}
+		}
+	}
+}
+
